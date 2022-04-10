@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
 			command: "hello",
-                        aliases: ["hello", "hii", "yo"],
+                        aliases: ["hemlo", "hii", "yo"],
 			description: "Generally used to check if bot is Up",
 			category: "general",
 			usage: `${client.config.prefix}hello`,
@@ -28,7 +28,7 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `Hey🍭 hey🍭 , *Hello👋 @${m.sender.split`@`[0]}_\n\n_senpai❣️ How are you😊 \n`,
+				caption: `Hey🍭 hey🍭 , senpai🥰, \n\n how are you 😌. ✨ \n`,
 			}
 		);
 	};
