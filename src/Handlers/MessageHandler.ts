@@ -1,4 +1,4 @@
-import { MessageType } from '@adiwajshing/baileys/lib/WAConnection'
+import { MessageType, Mimetype } from '@adiwajshing/baileys/lib/WAConnection'
 import axios from 'axios'
 import chalk from 'chalk'
 import { join } from 'path'
@@ -28,9 +28,7 @@ export default class MessageHandler {
 				this.client.user.name ||
 				this.client.user.vname ||
 				this.client.user.short ||
-				"Chitoge";
-		} else if (M.WAMessage.key.fromMe) return void null;
-
+				"Marin"
 		if (M.from.includes("status")) return void null;
 		const { args, groupMetadata, sender } = M;
 		if (M.chat === "dm" && this.client.isFeature("chatbot")) {
@@ -91,11 +89,11 @@ export default class MessageHandler {
 			)} from ${chalk.green(sender.username)} in ${chalk.cyanBright(
 				groupMetadata?.subject || "DM"
 			)}`
-		);
+		   );
 			if (!command)
-				return void M.reply( await request.buffer(`https://telegra.ph/file/c534b659a643e8b5c8ddf.mp4`),
-        MessageType.video,
-                    undefined,
+			return void M.reply( await request.buffer(`https://telegra.ph/file/e5099bd60926ebb4a3c65.mp4`),
+                    MessageType.video,
+                    Mimetype.gif,
                     undefined,
                     `No such command, Baka! Have you never seen someone use the command *${this.client.config.prefix}help*`,
                     undefined
@@ -111,11 +109,13 @@ export default class MessageHandler {
 					state.reason ? ` for ${state.reason}` : ""
 				}`
 			);
+		if (!command.config?.dm && M.chat === "dm")
+			return void M.reply("This command can only be used in groups");
 		if (
-			command.config?.modsOnly &&
+			command.config?.modsOnly & chey &&
 			!this.client.config.mods?.includes(M.sender.jid)
 		) {
-			return void M.reply(`Only MODS & chey are allowed to use this command.`);
+			return void M.reply(`Only MODS & Chey are allowed to use this command.`);
 		}
 		if (command.config?.adminOnly && !M.sender.isAdmin)
 			return void M.reply(
