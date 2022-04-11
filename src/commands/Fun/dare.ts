@@ -9,7 +9,7 @@ const r = require('better-tord');
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'dare',
+            command: 'dare,d',
             description: 'Gives you random task',
             category: 'fun',
             usage: `${client.config.prefix}dare`,
