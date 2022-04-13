@@ -1,4 +1,4 @@
-import { MessageType } from '@adiwajshing/baileys'
+import { MessageType, Mimetype } from '@adiwajshing/baileys'
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
         if (!joined) return void M.reply(' Provide a search term, Baka!')
         const term = joined.trim()
         const { videos } = await yts(term)
-        if (!videos || videos.length <= 0) return void M.reply(`⚓ No Matching videos found for the term : *${term}*`)
+        if (!videos || videos.length <= 0) return void M.reply(`😑 No Matching videos found for the term : *${term}*`)
         const audio = new YT(videos[0].url, 'audio')
         if (!audio.url) return
         M.reply('💽 Sending...')
@@ -32,7 +32,7 @@ export default class Command extends BaseCommand {
                 contextInfo: {
                     externalAdReply: {
                         title: videos[0].title.substr(0, 30),
-                        body: `💖 MARIN 🖤`,
+                        body: `🖤 Marin 💖`,
                         mediaType: 2,
                         thumbnailUrl: `https://i.ytimg.com/vi/${audio.id}/hqdefault.jpg`,
                         mediaUrl: audio.url
