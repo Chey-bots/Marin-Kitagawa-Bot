@@ -31,7 +31,7 @@ Wa.me/918373017400
 https://github.com/Chey-san
 
 📮𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢;
-https://instagram.com/its_chey_7
+https://instagram.com/its_chey7
 
 🚀𝘿𝙞𝙨𝙘𝙤𝙧𝙙;
 ｟𝖢𝗈𝗆𝗂𝗇𝗀 𝖲𝗈𝗈𝗇｠
