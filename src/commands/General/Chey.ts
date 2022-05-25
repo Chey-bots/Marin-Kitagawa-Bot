@@ -22,10 +22,10 @@ export default class Command extends BaseCommand {
         let rin = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: rin }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
-            caption: `Hey I'm CHEY, a learner/student & an upcoming developer in the future.
+            caption: `Hey I'm CHEY, From India 🇮🇳 a learner/student & an upcoming developer in the future.
             
 📫𝙒𝙝𝙖𝙩𝙨𝘼𝙥𝙥;
-Wa.me/918373017400
+Wa.me/16474244784
 
 ⭕𝙂𝙞𝙩𝙝𝙪𝙗;
 https://github.com/Chey-san
