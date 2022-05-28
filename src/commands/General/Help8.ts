@@ -66,6 +66,7 @@ export default class Command extends BaseCommand {
 🔮 ${this.client.config.prefix}pj
 🔮 ${this.client.config.prefix}rb
 🔮 ${this.client.config.prefix}yuri
+🔮 ${this.client.config.prefix}seggs
 💫ENJOY_PERVERTS😳
 ──────────────` }
         )
