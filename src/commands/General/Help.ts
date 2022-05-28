@@ -111,9 +111,9 @@ export default class Command extends BaseCommand {
 ────────────────
 🎯F U N🎯
 ────────────────
-🏮~Qᴜᴏᴛᴇ
-🌟Discription: random quote
-🧧Usage: ${this.client.config.prefix}Quote
+🏮~chat
+🌟Discription: to talk with Marin 
+🧧Usage: ${this.client.config.prefix}chat hello
 
 🏮~ʀᴇᴀᴄᴛ
 🌟Discription: Let's React
@@ -174,6 +174,16 @@ export default class Command extends BaseCommand {
 🏮~wasted
 🌟Discription: You just got wasted
 🧧usage:${this.client.config.prefix}wasted [tag/quote]
+
+🏮~darkjoke
+🌟Discription: Will send you random dark joke
+🧧usage:${this.client.config.prefix}darkjoke
+
+🏮~advice
+🌟Discription: description: 'Gives you random advice.\nDisclaimer: We do not hold responsibility of consequences of your actions based on the advice
+🧧usage:${this.client.config.prefix}advice
+
+
 ────────────────
 💽M E D I A💽
 ────────────────
