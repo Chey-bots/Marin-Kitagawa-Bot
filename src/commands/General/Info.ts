@@ -34,7 +34,7 @@ export default class Command extends BaseCommand {
 			return `${pad(hours)}:${pad(minutes)}:${pad(secs)}`;
 		};
 		const uptime = () => formatTime(process.uptime());
-		await M.reply(await request.buffer(`https://c.tenor.com/veo9RwLpw8AAAAPo/nakano-yotsuba-wolverine.mp4`),
+		await M.reply(await request.buffer(`https://telegra.ph/file/5ab4ac77b1b92a97b6fca.mp4`),
             MessageType.video,
             Mimetype.gif,
             undefined,
